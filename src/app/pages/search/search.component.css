@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #191919;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 155px;
+}
+
+.card {
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    height: 190px;
+    margin: 12px;
+}
+
+.rock {
+    background-color: red; /* Red */
+}
+
+.pop {
+    background-color: yellow; /* Green */
+}
+
+.jazz {
+    background-color: rgb(146, 146, 146); /* Blue */
+}
+
+.blues {
+    background-color: purple; /* Purple */
+}
+
+.hip-hop {
+    background-color: #ff7700; /* Orange */
+}
+
+.country {
+    background-color: #cc2eb2; /* Emerald */
+}
+
+.electronic {
+    background-color: #0099ff; /* Blue */
+}
+
+.reggae {
+    background-color: #ff1900; /* Alizarin */
+}
+
+.rnb {
+    background-color: #ff9d00; /* Orange */
+}
+
+.classical {
+    background-color: #5dfe00; /* Midnight Blue */
+}

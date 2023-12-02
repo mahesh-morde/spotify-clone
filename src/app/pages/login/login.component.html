@@ -1,0 +1,25 @@
+<!-- login.component.html -->
+
+<div class="login_container">
+  <img src="assets/Spotify_green.png" width="200" height="60" style="display: block; margin: 60px auto;" />
+  <hr>
+  <h2>Login to Your Account</h2><br/>
+  <div>
+    <label><strong>Email address</strong></label><br/>
+    <input type="text" placeholder="Enter your email address" />
+  </div>
+  <div>
+    <label><strong>Password</strong></label><br/>
+    <input type="password" placeholder="Enter your password" /><br/>
+  </div>
+  
+    <input type="checkbox" class="chbx"/> Remember Me
+  
+  <div class="login-options">
+    <button class="login_btn">LOGIN</button>
+  </div>
+  <div class="pass">
+  <a class="forgot-password">Forgot Password?</a>
+  <p>Don't have an account? <a (click)="onNavigateToReg()">Sign Up</a></p>
+  </div>
+</div>
