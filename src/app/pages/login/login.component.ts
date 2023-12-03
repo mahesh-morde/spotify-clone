@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { AuthService } from 'src/app/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { Route, Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit{
   
-  constructor(private Router:Router){}
+  constructor(private Router:Router, private auth:AuthService){}
 
   onNavigateToReg(){
     this.Router.navigate(['/signup']);
@@ -30,6 +31,11 @@ export class LoginComponent implements OnInit{
    submit(){
     console.log(this.userForm.value)
    }
+
+   onNavigateToHome(){
+    this.auth.login(),
+    this.Router.navigate(['/home']);
+  }
   
 }
 
